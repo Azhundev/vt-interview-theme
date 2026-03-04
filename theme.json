@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "customTemplates": [
+    {
+      "name": "recruitment",
+      "title": "Recruitment Services",
+      "postTypes": ["page"]
+    }
+  ],
+  "settings": {
+    "layout": {
+      "contentSize": "1100px",
+      "wideSize": "1400px"
+    }
+  }
+}
