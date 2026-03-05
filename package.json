@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "build:css": "postcss src/css/input.css -o dist/theme.css",
-    "watch:css": "postcss src/css/input.css -o dist/theme.css -w",
-    "build": "npm run build:css"
+    "build:js": "esbuild src/js/main.js --bundle --minify --outfile=dist/theme.js",
+    "build": "npm run build:css && npm run build:js"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",

@@ -9,9 +9,9 @@
     }
   ],
   "settings": {
-    "layout": {
-      "contentSize": "1100px",
-      "wideSize": "1400px"
-    }
+  "layout": {
+    "contentSize": "1100px",
+    "wideSize": "1728px"
   }
+}
 }

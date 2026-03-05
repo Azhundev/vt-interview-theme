@@ -1,1 +1,77 @@
 @import "tailwindcss";
+
+/* Page background like Figma */
+.page-bg{
+  background:
+    radial-gradient(1200px 600px at 30% 10%, rgba(59,130,246,.14), transparent 60%),
+    radial-gradient(900px 500px at 70% 20%, rgba(16,185,129,.10), transparent 55%),
+    #020617;
+}
+
+/* Constrain editor canvas too (optional but helps) */
+.editor-styles-wrapper .page-bg{
+  min-height: 100vh;
+}
+
+/* Pills (Buttons block) */
+.wp-block-button.pill .wp-element-button{
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.85);
+  border-radius: 9999px;
+  padding: 10px 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.wp-block-button.pill .wp-element-button:hover{
+  background: rgba(255,255,255,.10);
+}
+
+/* CTA bar wrapper */
+.cta-bar{
+  margin-top: 40px;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.05);
+}
+
+.cta-bar .wp-element-button{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.9);
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* Hero image rounding */
+.hero-image img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+@media (min-width: 768px){
+  .hero-image img{
+    border-bottom-left-radius: 160px;
+  }
+}
+
+/* Header nav separators (like the Figma pipes) */
+.wp-block-navigation__container > .wp-block-navigation-item:not(:last-child)::after{
+  content: "|";
+  display: inline-block;
+  margin: 0 14px;
+  color: rgba(255,255,255,.45);
+}
+
+/* Exact hex colors from Figma*/
+.site-header { background: #0B1931; }
+.site-footer { background: #121F33; }
+
+.page-bg{
+  min-height: 100vh;
+}
